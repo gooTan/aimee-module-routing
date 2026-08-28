@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "module": "routing",
+  "classification": "required",
+  "execution": "process",
+  "runtime": "go",
+  "placements": [
+    "server"
+  ],
+  "principal_class": 1,
+  "principal_ref": 9,
+  "stages": [
+    {
+      "id": 1,
+      "name": "route-selection",
+      "event_kind": 6401
+    }
+  ],
+  "source_sha256": "cc1b2d21d0a5384471ca297b0e9ba204b49da38ba1cce719482f5a2b2e7d5deb",
+  "owned_files": [
+    "src/modules/routing/module.yaml",
+    "src/modules/routing/routing.c",
+    "src/modules/routing/module_adapter.c",
+    "src/modules/routing/include/aimee/routing/module_api.h",
+    "src/tests/test_agent_caps.c",
+    "docs/modules/routing.md",
+    "server-go/modules/routing/routing.go",
+    "server-go/modules/routing/routing_test.go"
+  ]
+}

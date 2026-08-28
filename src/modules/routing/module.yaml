@@ -1,0 +1,34 @@
+{
+  "descriptor_version": 1,
+  "id": "routing",
+  "dependencies": [
+    "config",
+    "ir",
+    "learning",
+    "memory",
+    "module-runtime"
+  ],
+  "runtime_toggle": {
+    "supported": false
+  },
+  "ownership_complete": true,
+  "sources": [
+    "src/modules/routing/routing.c",
+    "src/modules/routing/module_adapter.c"
+  ],
+  "go_sources": [
+    "server-go/modules/routing/routing.go"
+  ],
+  "go_tests": [
+    "server-go/modules/routing/routing_test.go"
+  ],
+  "public_headers": [
+    "src/modules/routing/include/aimee/routing/module_api.h"
+  ],
+  "tests": [
+    "src/tests/test_agent_caps.c"
+  ],
+  "docs": [
+    "docs/modules/routing.md"
+  ]
+}
